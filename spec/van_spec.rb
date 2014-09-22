@@ -11,4 +11,9 @@ describe Van do
 		expect(van.bikes).to eq [broken_bike]
 	end
 
+	it "should pick up working bikes" do
+		van.dock(working_bike)
+		expect(van.bikes).to eq [working_bike]
+	end
+
 end
