@@ -25,7 +25,8 @@ module BikeContainer
 	end
 
 	def release(bike)
-		bikes.pop
+		# it should release the bike that's passed as the argument
+		bikes.delete(bike)
 	end
 
 	def available_bikes
@@ -34,6 +35,16 @@ module BikeContainer
 
 	def broken_bikes
 		bikes.select { |bike| bike.broken? }
+	end
+
+	# EXTRA METHODS
+
+	def release_available
+		bikes.delete(available_bikes.pop)
+	end
+
+	def release_broken
+		bikes.delete(broken_bikes.pop)
 	end
 
 end
