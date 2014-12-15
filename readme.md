@@ -11,13 +11,13 @@ I really enjoyed this as a first task and it was the start of my new love story 
 1)  To clone the repository:
 
 ```sh
-$ git clone https://github.com/fadieh/boris_bikes_3.git
+$ git clone https://github.com/fadieh/BORIS_BIKES_ruby.git
 ```
 
 2)  Change into the repository.
 
 ```sh
-$ cd boris_bikes_3
+$ cd BORIS_BIKES_ruby
 ```
 
 3) RSpec to see the lovely, green tests!

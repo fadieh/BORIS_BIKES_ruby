@@ -1,6 +1,6 @@
 class Person
 
-	# attr_accessor :bike
+	attr_accessor :bike
 
 	def initialize
 		@bike = nil
@@ -10,9 +10,8 @@ class Person
 		!@bike.nil?
 	end
 
-	def rent_bike_from(station)
-		raise PersonAlreadyHasBikeError.new "You have a bike!" if !has_bike
-		@bike = station.rent_bike_to_person
+	def rent_bike
+		@bike = true
 	end
 
 	def fall_down
