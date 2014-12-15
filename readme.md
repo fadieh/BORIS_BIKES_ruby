@@ -25,3 +25,8 @@ $ cd BORIS_BIKES_ruby
 ```sh
 $ rspec
 ```
+
+### Technologies used
+
+- Ruby 2.1.2
+- RSpec 3.1.7
