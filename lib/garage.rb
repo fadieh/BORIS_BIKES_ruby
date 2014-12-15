@@ -10,8 +10,14 @@ class Garage
 		self.capacity = options.fetch(:capacity, capacity)
 	end
 
-	def repair(bike)
-		bike.fix!
+	def repair_all_broken_bikes
+		broken_bikes.each do |broken_bike|
+			broken_bike.fix!
+		end
+	end
+
+	def fix!
+		@broken = false
 	end
 
 end
