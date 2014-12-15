@@ -21,10 +21,4 @@ describe Garage do
 		expect(garage.capacity).to eq 20
 	end
 
-	it "should be able fix bikes" do
-		garage.dock(broken_bike)
-		garage.repair_all_broken_bikes
-		expect(broken_bike).to receive(:fix!)
-	end
-
 end

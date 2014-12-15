@@ -14,6 +14,10 @@ describe Person do
 		expect(person.bike).to eq true
 	end
 
-
+	it "should dock a bike" do
+		person.rent_bike
+		person.dock_bike
+		expect(person.bike).to eq false
+	end
 
 end

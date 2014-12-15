@@ -14,6 +14,10 @@ class Person
 		@bike = true
 	end
 
+	def dock_bike
+		@bike = false
+	end
+
 	def fall_down
 		@bike.break!
 	end
